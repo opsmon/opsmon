@@ -14,7 +14,7 @@
 
 - 🏢 **X5 TECH** - Software Engineer in Loyalty Program
 - 🛠 **Focus:** Cloud Platforms, Kubernetes & Developer Experience
-- 🔧 **Core stack:** Kubernetes, Linux, Prometheus, Grafana, Argo CD, GitLab, PostgreSQL, Kafka, Python
+- 🔧 **Core stack:** Linux, Docker, Kubernetes, Prometheus, Grafana, Argo CD, GitLab, PostgreSQL, Kafka, Python
 - 📋 **Passion:** Standardizing and documenting processes
 - 💰 **FinOps:** Experience with cloud cost optimization and financial management practices
 - 📝 **Kubernetes Documentation Contributor**
