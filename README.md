@@ -17,7 +17,6 @@
 - 🔧 **Core stack:** Linux, Docker, Kubernetes, Prometheus, Grafana, Argo CD, GitLab, PostgreSQL, Kafka, Python
 - 📋 **Passion:** Standardizing and documenting processes
 - 💰 **FinOps:** Experience with cloud cost optimization and financial management practices
-- 📝 **Kubernetes Documentation Contributor**
 - ⚡ **Fun fact:** *I love documentation*
 
 ---
