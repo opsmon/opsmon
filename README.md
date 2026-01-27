@@ -29,9 +29,6 @@
 <br/>
 <strong>OpenStack</strong> • <strong>VMware Cloud Director</strong>
 <br/>
-Experience with: <strong>cloud.ru</strong> • <strong>Selectel</strong> • <strong>Yandex Cloud</strong> • <strong>InfoManiac</strong>
-</p>
-
 ---
 
 ## 🧰 Tech Stack & Tools
