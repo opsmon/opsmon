@@ -2,7 +2,7 @@
 <div align="center">
 
 # 👋 Hi, I'm opsmon
-**Platform Engineer**
+**System Engineer**
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=2600&pause=700&center=true&vCenter=true&width=820&lines=Building+reliable+platforms+and+internal+developer+tools;Cloud%2C+Kubernetes+%26+Platform+Engineering;GitOps+%7C+Observability+%7C+Automation+%7C+FinOps;Kubernetes+Documentation+Contributor" />
 
@@ -12,7 +12,7 @@
 
 ## 🧭 About Me
 
-- 🏢 **X5 TECH** - Software Engineer in Loyalty Program
+- 🏢 **X5 TECH** - System Engineer in Loyalty Program
 - 🛠 **Focus:** Cloud Platforms, Kubernetes & Developer Experience
 - 🔧 **Core stack:** Linux, Docker, Kubernetes, Prometheus, Grafana, Argo CD, GitLab, PostgreSQL, Kafka, Python
 - 📋 **Passion:** Standardizing and documenting processes
