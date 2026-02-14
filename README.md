@@ -29,7 +29,6 @@
 <br/>
 <strong>OpenStack</strong> • <strong>VMware Cloud Director</strong>
 <br/>
----
 
 ## 🧰 Tech Stack & Tools
 
