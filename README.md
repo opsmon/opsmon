@@ -54,9 +54,7 @@
 <p align="center">
 <img src="https://cdn.simpleicons.org/terraform/7B42BC" alt="Terraform" width="48" height="48"/>
 <img src="https://cdn.simpleicons.org/ansible/EE0000" alt="Ansible" width="48" height="48"/>
-<img src="https://cdn.simpleicons.org/packer/02A8EF" alt="Packer" width="48" height="48"/>
 <img src="https://cdn.simpleicons.org/vault/000000" alt="Vault" width="48" height="48"/>
-<img src="https://cdn.simpleicons.org/consul/F24C53" alt="Consul" width="48" height="48"/>
 </p>
 
 ### 🔄 CI/CD & GitOps
@@ -81,7 +79,6 @@
 <img src="https://cdn.simpleicons.org/prometheus/E6522C" alt="Prometheus" width="48" height="48"/>
 <img src="https://cdn.simpleicons.org/grafana/F46800" alt="Grafana" width="48" height="48"/>
 <img src="https://cdn.simpleicons.org/elasticsearch/005571" alt="Elasticsearch" width="48" height="48"/>
-<img src="https://cdn.simpleicons.org/grafana/F46800" alt="Loki" width="48" height="48"/>
 <img src="https://cdn.simpleicons.org/jaeger/66CFE3" alt="Jaeger" width="48" height="48"/>
 <img src="https://cdn.simpleicons.org/kibana/005571" alt="Kibana" width="48" height="48"/>
 </p>
