@@ -143,7 +143,8 @@
 
 ## 🏆 Contributions
 
-- 📚 **Kubernetes Documentation Contributor** - Contributing to official Kubernetes documentation and community resources
+- 🧭 **Kubernetes Documentation Translator** - Translating official Kubernetes documentation into Russian
+- ☁️ **Yandex Cloud Documentation Contributor** - Contributing to official Yandex Cloud documentation
 
 ---
 
