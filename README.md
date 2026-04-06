@@ -103,7 +103,6 @@
 <img src="https://cdn.simpleicons.org/go/00ADD8" alt="Go" width="48" height="48"/>
 <img src="https://cdn.simpleicons.org/gnubash/4EAA25" alt="Bash" width="48" height="48"/>
 <img src="https://cdn.simpleicons.org/yaml/CB171E" alt="YAML" width="48" height="48"/>
-<img src="https://cdn.simpleicons.org/terraform/7B42BC" alt="HCL" width="48" height="48"/>
 <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="SQL" width="48" height="48"/>
 </p>
 
