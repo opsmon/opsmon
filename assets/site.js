@@ -125,6 +125,7 @@ const themeButtons = document.querySelectorAll("[data-theme-value]");
 const languageToggle = document.querySelector(".language-toggle");
 const themeToggle = document.querySelector(".theme-toggle");
 const supportedLanguages = Object.keys(translations);
+const supportedThemes = ["base", "x5", "noir"];
 
 function readPreference(key) {
   try {
@@ -189,12 +190,12 @@ function applyLanguage(language, updateUrl = false) {
 }
 
 function applyTheme(theme, updateUrl = false) {
-  const selectedTheme = theme === "x5" ? "x5" : "base";
+  const selectedTheme = supportedThemes.includes(theme) ? theme : "base";
 
-  if (selectedTheme === "x5") {
-    document.documentElement.dataset.theme = "x5";
-  } else {
+  if (selectedTheme === "base") {
     delete document.documentElement.dataset.theme;
+  } else {
+    document.documentElement.dataset.theme = selectedTheme;
   }
 
   themeButtons.forEach((button) => {
@@ -210,7 +211,13 @@ function applyTheme(theme, updateUrl = false) {
 
   const themeColor = document.querySelector('meta[name="theme-color"]');
   if (themeColor) {
-    themeColor.content = selectedTheme === "x5" ? "#eafbdc" : "#f5f5f7";
+    const themeColors = {
+      base: "#f5f5f7",
+      x5: "#eafbdc",
+      noir: "#08060f",
+    };
+
+    themeColor.content = themeColors[selectedTheme];
   }
 
   savePreference("opsmon-theme", selectedTheme);
@@ -244,6 +251,9 @@ const browserLanguage = navigator.language.toLowerCase().startsWith("ru")
 
 applyLanguage(urlLanguage || savedLanguage || browserLanguage);
 applyTheme(urlTheme || readPreference("opsmon-theme") || "base");
+requestAnimationFrame(() => {
+  document.documentElement.classList.add("theme-ready");
+});
 
 const year = document.querySelector("#year");
 
