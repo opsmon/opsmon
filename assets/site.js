@@ -126,6 +126,7 @@ const languageToggle = document.querySelector(".language-toggle");
 const themeToggle = document.querySelector(".theme-toggle");
 const supportedLanguages = Object.keys(translations);
 const supportedThemes = ["base", "x5", "noir"];
+const themePreferenceKey = "opsmon-theme-v2";
 
 function readPreference(key) {
   try {
@@ -220,7 +221,7 @@ function applyTheme(theme, updateUrl = false) {
     themeColor.content = themeColors[selectedTheme];
   }
 
-  savePreference("opsmon-theme", selectedTheme);
+  savePreference(themePreferenceKey, selectedTheme);
 
   if (updateUrl) {
     const url = new URL(window.location.href);
@@ -250,7 +251,7 @@ const browserLanguage = navigator.language.toLowerCase().startsWith("ru")
   : "en";
 
 applyLanguage(urlLanguage || savedLanguage || browserLanguage);
-applyTheme(urlTheme || readPreference("opsmon-theme") || "base");
+applyTheme(urlTheme || readPreference(themePreferenceKey) || "noir");
 requestAnimationFrame(() => {
   document.documentElement.classList.add("theme-ready");
 });
