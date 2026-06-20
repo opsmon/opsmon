@@ -1,7 +1,7 @@
 <!-- ================= HEADER ================= -->
 <div align="center">
 
-# 👋 Hi, I'm opsmon
+# Hi, I'm opsmon
 **DevOps Engineer**
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=2600&pause=700&center=true&vCenter=true&width=820&lines=DevOps+Engineer+on+the+Payment+Service;Building+reliable+platforms+and+internal+developer+tools;MLOps+%7C+Observability+%7C+Automation+%7C+Developer+Experience;Kubernetes+Documentation+Contributor" alt="Typing intro" />
