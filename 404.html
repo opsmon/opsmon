@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Page not found - Sergey Frolov</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body class="not-found-page">
+    <main class="shell not-found">
+      <section class="not-found-copy" aria-labelledby="not-found-title">
+        <p class="eyebrow">HTTP 404</p>
+        <h1 id="not-found-title">Pod not found.</h1>
+        <p>
+          The requested page left the cluster, missed the readiness probe, and
+          is currently pretending this was a planned migration.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="./">Back to portfolio</a>
+          <a
+            class="button button-secondary"
+            href="https://github.com/opsmon"
+            target="_blank"
+            rel="noreferrer"
+          >Open GitHub</a>
+        </div>
+      </section>
+
+      <aside class="not-found-terminal" aria-label="404 diagnostic output">
+        <div class="terminal-top" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <pre><code>$ kubectl get page /this-route
+NAME          STATUS              AGE
+this-route    CrashLoopBackOff    404s
+
+$ kubectl describe page /this-route
+Reason:  Link wandered away
+Action:  Return to a healthy endpoint
+
+$ echo "no panic, just routing"
+no panic, just routing</code></pre>
+      </aside>
+    </main>
+  </body>
+</html>
