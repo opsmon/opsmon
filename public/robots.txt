@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://opsmon.github.io/opsmon/sitemap.xml
