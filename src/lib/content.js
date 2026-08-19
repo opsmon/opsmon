@@ -464,3 +464,5 @@ const contactLinks = [
     url: `mailto:${profile.email}`,
   },
 ];
+
+export { profile, translations, skills, projects, moreProjects, contactLinks };

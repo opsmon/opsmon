@@ -1,0 +1,16 @@
+{
+  "name": "opsmon",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build && cp dist/index.html dist/404.html",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^7.3.0",
+    "svelte": "^5.56.9",
+    "vite": "^8.2.1"
+  }
+}
