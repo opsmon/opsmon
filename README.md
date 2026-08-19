@@ -40,7 +40,6 @@
 
 ## 🚀 Projects
 
-- 🚨 [IncidentGPT](https://github.com/opsmon/IncidentGPT) - AIOps assistant for incident context and LLM analysis drafts.
 - 🚢 [kubectl Cheatsheet](https://opsmon.github.io/kubectl-cheatsheet/) - searchable Kubernetes reference.
 - 💻 [macOS Engineering Setup](https://opsmon.github.io/setup/) - reproducible DevOps workstation setup.
 - 🧳 [Travel Checklist](https://opsmon.github.io/travel/) - small product-minded web tool.
@@ -49,6 +48,8 @@
 
 ## 🏆 Contributions
 
+- 🚨 [IncidentGPT](https://github.com/opsmon/IncidentGPT) - AIOps assistant for incident context and LLM analysis drafts.
+- 🧩 [DeckHouse User Community](https://deckhouse.ru/community/) - community contributor.
 - ☸️ [Kubernetes Documentation](https://github.com/kubernetes/website) - documentation contribution.
 - ☁️ [Yandex Cloud Documentation](https://github.com/yandex-cloud/docs) - documentation contribution.
 - ✍️ [Habr](https://habr.com/ru/users/opsmon/) - engineering notes and articles.

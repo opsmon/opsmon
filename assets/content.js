@@ -97,8 +97,8 @@ const translations = {
       stackLabel: "Stack",
       githubLabel: "GitHub",
       demoLabel: "Live demo",
-      moreEyebrow: "More projects",
-      moreTitle: "Open-source projects and practical tools",
+      moreEyebrow: "Contributions",
+      moreTitle: "Open-source contributions and community work",
       openLabel: "Open",
     },
     direction: {
@@ -199,8 +199,8 @@ const translations = {
       stackLabel: "Стек",
       githubLabel: "GitHub",
       demoLabel: "Live demo",
-      moreEyebrow: "More projects",
-      moreTitle: "Open-source проекты и практические инструменты",
+      moreEyebrow: "Contributions",
+      moreTitle: "Вклад в open-source и сообщество",
       openLabel: "Открыть",
     },
     direction: {
@@ -317,40 +317,6 @@ const skills = [
 
 const projects = [
   {
-    title: "IncidentGPT",
-    featured: true,
-    status: "Human-in-the-loop",
-    category: "AIOps · Incident Analysis · LLM",
-    description: {
-      en:
-        "A project I contribute to: AIOps assistant for alert enrichment, incident context and LLM-generated analysis drafts.",
-      ru:
-        "Проект, в который я вношу вклад: AIOps-ассистент для обогащения алертов, контекста инцидентов и LLM-черновиков анализа.",
-    },
-    problem: {
-      en:
-        "Incident context is often spread across alerts, metrics, Kubernetes objects and chat delivery.",
-      ru:
-        "Контекст инцидента часто распределён между алертами, метриками, Kubernetes-объектами и каналами доставки.",
-    },
-    solution: {
-      en:
-        "AI prepares context and a draft; the engineer makes the final decision.",
-      ru:
-        "AI готовит контекст и черновик анализа; финальное решение остаётся за инженером.",
-    },
-    stack: ["Go", "Kubernetes", "Prometheus", "Redis", "LLM API", "Telegram"],
-    features: [
-      "Alertmanager integration",
-      "Prometheus enrichment",
-      "Kubernetes context",
-      "Redis correlation",
-      "LLM analysis",
-      "Telegram delivery",
-    ],
-    github: "https://github.com/opsmon/IncidentGPT",
-  },
-  {
     title: "kubectl Cheatsheet",
     status: "Open source",
     category: "Kubernetes · Documentation",
@@ -434,6 +400,22 @@ const projects = [
 ];
 
 const moreProjects = [
+  {
+    title: "IncidentGPT",
+    description: {
+      en: "AIOps assistant contribution for incident context and LLM analysis drafts",
+      ru: "Вклад в AIOps-ассистента для контекста инцидентов и LLM-черновиков анализа",
+    },
+    url: "https://github.com/opsmon/IncidentGPT",
+  },
+  {
+    title: "DeckHouse User Community",
+    description: {
+      en: "Community contributor",
+      ru: "Контрибьютер пользовательского сообщества",
+    },
+    url: "https://deckhouse.ru/community/",
+  },
   {
     title: "GitHub Profile",
     description: {
