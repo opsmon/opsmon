@@ -18,8 +18,8 @@
 ## 🧭 About Me
 
 - 🛠️ **Focus:** infrastructure, delivery, observability, automation, MLOps/AIOps
-- 💻 **Core stack:** Kubernetes, Docker, Helm, Terraform, Ansible, Linux
-- 🚦 **Monitoring:** Prometheus, Grafana, Loki, OpenSearch, OpenTelemetry
+- 💻 **Core stack:** Linux, Docker, Kubernetes, Helm, Terraform, Ansible, 
+- 🚦 **Monitoring:** Prometheus, Alert Manager, Grafana, OpenSearch
 - 🗄️ **Data:** PostgreSQL, Redis, Kafka, S3
 - 🐍 **MLOps:** Python, FastAPI, model delivery, LLM integrations
 - 📚 **Docs:** I like clear documentation and practical engineering notes
