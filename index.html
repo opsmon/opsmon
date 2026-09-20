@@ -1,38 +1,119 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f7f8f6">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#08060f" />
     <meta
       name="description"
       content="DevOps Engineer focused on Kubernetes, CI/CD, observability, infrastructure automation and practical MLOps projects."
-    >
-    <meta name="author" content="Sergey Frolov">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://opsmon.github.io/opsmon/">
+    />
+    <meta property="og:locale" content="en_US" />
+    <script>
+      (() => {
+        const params = new URLSearchParams(location.search);
+        const saved = (key) => {
+          try {
+            return localStorage.getItem("sergey-frolov-" + key);
+          } catch {
+            return null;
+          }
+        };
+        const choose = (key, values, storageKey, fallback) => {
+          const query = params.get(key),
+            stored = saved(storageKey);
+          return values.includes(query)
+            ? query
+            : values.includes(stored)
+              ? stored
+              : fallback;
+        };
+        const theme = choose(
+          "theme",
+          ["dark", "light"],
+          "theme",
+          matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light",
+        );
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.lang = choose(
+          "lang",
+          ["en", "ru"],
+          "language",
+          navigator.language.toLowerCase().startsWith("ru") ? "ru" : "en",
+        );
 
-    <meta property="og:title" content="Sergey Frolov - DevOps Engineer">
+        document.querySelector('meta[name="theme-color"]').content =
+          theme === "dark" ? "#08060f" : "#f7f4fc";
+        window.__opsmonPreferences = {
+          system:
+            !["dark", "light"].includes(params.get("theme")) &&
+            !["dark", "light"].includes(saved("theme")),
+        };
+      })();
+    </script>
+    <style>
+      html[data-theme="dark"] {
+        background: #08060f;
+        color-scheme: dark;
+      }
+      html[data-theme="light"] {
+        background: #f7f4fc;
+        color-scheme: light;
+      }
+    </style>
+    <meta name="author" content="Sergey Frolov" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://opsmon.github.io/opsmon/" />
+
+    <meta property="og:title" content="Sergey Frolov - DevOps Engineer" />
     <meta
       property="og:description"
       content="DevOps Engineer focused on Kubernetes, CI/CD, observability, infrastructure automation and practical MLOps projects."
-    >
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://opsmon.github.io/opsmon/">
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/167893183?v=4">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Sergey Frolov - DevOps Engineer">
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://opsmon.github.io/opsmon/" />
+    <meta
+      property="og:image"
+      content="https://opsmon.github.io/opsmon/assets/social-preview.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="opsmon — Reliable systems. Clear thinking. Sergey Frolov, DevOps Engineer."
+    />
+    <meta
+      name="twitter:image:alt"
+      content="opsmon — Reliable systems. Clear thinking. Sergey Frolov, DevOps Engineer."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sergey Frolov - DevOps Engineer" />
     <meta
       name="twitter:description"
       content="DevOps Engineer focused on Kubernetes, CI/CD, observability, infrastructure automation and practical MLOps projects."
-    >
-    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/167893183?v=4">
+    />
+    <meta
+      name="twitter:image"
+      content="https://opsmon.github.io/opsmon/assets/social-preview.png"
+    />
 
     <title>Sergey Frolov - DevOps Engineer</title>
-    <link rel="alternate" hreflang="en" href="https://opsmon.github.io/opsmon/?lang=en">
-    <link rel="alternate" hreflang="ru" href="https://opsmon.github.io/opsmon/?lang=ru">
-    <link rel="alternate" hreflang="x-default" href="https://opsmon.github.io/opsmon/">
-    <link rel="icon" href="%BASE_URL%assets/favicon.svg" type="image/svg+xml">
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://opsmon.github.io/opsmon/?lang=en"
+    />
+    <link
+      rel="alternate"
+      hreflang="ru"
+      href="https://opsmon.github.io/opsmon/?lang=ru"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://opsmon.github.io/opsmon/"
+    />
+    <link rel="icon" href="%BASE_URL%assets/favicon.svg" type="image/svg+xml" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",

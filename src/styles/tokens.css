@@ -1,0 +1,75 @@
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("../assets/fonts/inter-latin-wght-normal.woff2") format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("../assets/fonts/inter-cyrillic-wght-normal.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+:root {
+  --font:
+    Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --max: 1240px;
+  --gutter: 28px;
+  --section: 120px;
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 20px;
+  --s6: 24px;
+  --s8: 32px;
+  --s10: 40px;
+  --s12: 48px;
+  --s16: 64px;
+  --radius: 8px;
+  --radius-sm: 4px;
+  --motion: 180ms;
+  --entrance: 460ms;
+  --header: 80px;
+  --shadow: 0 24px 80px #0003;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #08060f;
+  --surface: #100b1b;
+  --surface-raised: #191127;
+  --text: #f5f1ff;
+  --text-muted: #b6abc9;
+  --accent: #a78bfa;
+  --accent-strong: #7c3aed;
+  --accent-soft: #211335;
+  --border: #352747;
+  --control-border: #77668e;
+  --focus: #c4b5fd;
+  --button-bg: #a78bfa;
+  --button-text: #100b1b;
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f7f4fc;
+  --surface: #fff;
+  --surface-raised: #efe8f8;
+  --text: #21182f;
+  --text-muted: #675b78;
+  --accent: #6d28d9;
+  --accent-strong: #5b21b6;
+  --accent-soft: #ede2ff;
+  --border: #d9cee6;
+  --control-border: #887699;
+  --focus: #6d28d9;
+  --button-bg: #6d28d9;
+  --button-text: #fff;
+}
