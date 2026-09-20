@@ -68,6 +68,7 @@ export const skills = [
     items: [
       "PostgreSQL",
       "Redis",
+      "Temporal",
       "RabbitMQ",
       "Kafka",
       "ClickHouse",
