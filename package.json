@@ -1,0 +1,22 @@
+{
+  "name": "opsmon",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build && cp dist/index.html dist/404.html",
+    "preview": "vite preview --host 127.0.0.1",
+    "check": "svelte-check --fail-on-warnings && node --test tests/*.test.mjs",
+    "test": "playwright test",
+    "screenshots": "node tests/capture.mjs final"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.63.0",
+    "@sveltejs/vite-plugin-svelte": "^7.3.0",
+    "svelte": "^5.56.9",
+    "svelte-check": "^4.7.6",
+    "vite": "^8.2.1"
+  }
+}
